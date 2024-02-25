@@ -9,7 +9,7 @@
     "url": "git@github.com:dvzrd/expo-starter.git"
   },
   "homepage": "https://github.com/dvzrd/expo-starter.git",
-  "main": "index",
+  "main": "Main.tsx",
   "scripts": {
     "start": "expo start --dev-client",
     "start:clean": "expo start -c --dev-client",
