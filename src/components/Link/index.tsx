@@ -10,11 +10,10 @@ export interface ILink extends Omit<TextProps, 'href'> {
 
 // API Ref: https://www.tailwind-variants.org/docs/variants
 export const tvLink = tv({
-  base: 'transition-colors duration-200',
+  base: 'transition-colors duration-200 ease-in-out',
   variants: {
     color: {
-      primary:
-        'text-blue-500 hover:text-blue-700 focus:text-blue-700 active:text-blue-900',
+      primary: 'text-primary',
     },
   },
   defaultVariants: {

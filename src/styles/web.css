@@ -6,7 +6,7 @@
   
     body {
       @apply
-        bg-background
-        text-foreground;
+        bg-screen
+        text-fg;
     }
 }

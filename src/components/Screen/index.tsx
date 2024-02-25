@@ -5,7 +5,7 @@ import { useAppSafeAreaInsets } from '@/hooks';
 
 // API Ref: https://www.tailwind-variants.org/docs/composing-components
 export const tvScreen = tv({
-  base: 'flex-1',
+  base: 'flex-1 bg-screen text-fg',
 });
 
 const Screen = ({ children, className, ...rest }: ViewProps) => {

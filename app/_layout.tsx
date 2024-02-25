@@ -6,16 +6,10 @@ import { useFonts } from 'expo-font';
 import { SplashScreen, Tabs } from 'expo-router';
 import { memo, useEffect } from 'react';
 
+import Icon from '@/components/Icon';
+
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
-
-/**
- * You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
- */
-const TabIcon = (props: {
-  name: React.ComponentProps<typeof FontAwesome>['name'];
-  color: string;
-}) => <FontAwesome size={28} {...props} />;
 
 const AppLayoutNav = () => {
   return (
@@ -25,7 +19,7 @@ const AppLayoutNav = () => {
         options={{
           title: 'Proposals',
           headerShown: false,
-          tabBarIcon: ({ color }) => <TabIcon name="home" color={color} />,
+          tabBarIcon: ({ color }) => <Icon name="home" color={color} />,
         }}
       />
       <Tabs.Screen
@@ -33,7 +27,7 @@ const AppLayoutNav = () => {
         options={{
           title: 'Settings',
           headerShown: false,
-          tabBarIcon: ({ color }) => <TabIcon name="gear" color={color} />,
+          tabBarIcon: ({ color }) => <Icon name="gear" color={color} />,
         }}
       />
     </Tabs>
