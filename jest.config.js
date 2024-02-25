@@ -1,7 +1,7 @@
 module.exports = {
   preset: '@testing-library/react-native',
   moduleNameMapper: {
-    // Handle module aliases (this will be automatically configured for you soon)
+    // Handle module aliases
     '^@/(.*)$': '<rootDir>/src/$1',
 
     '^__mocks__/(.*)$': '<rootDir>/__mocks__/$1',
