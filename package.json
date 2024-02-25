@@ -9,7 +9,7 @@
     "url": "git@github.com:dvzrd/expo-starter.git"
   },
   "homepage": "https://github.com/dvzrd/expo-starter.git",
-  "main": "index",
+  "main": "Main.tsx",
   "scripts": {
     "start": "expo start --dev-client",
     "start:clean": "expo start -c --dev-client",
@@ -52,7 +52,8 @@
     "react-native-reanimated": "~3.6.2",
     "react-native-safe-area-context": "4.8.2",
     "react-native-screens": "~3.29.0",
-    "react-native-web": "~0.19.6"
+    "react-native-web": "~0.19.6",
+    "tailwind-variants": "^0.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
