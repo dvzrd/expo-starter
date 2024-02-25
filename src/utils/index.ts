@@ -1,3 +1,3 @@
-export const cn = (...classNames: (string | undefined)[]): string => {
-  return classNames.filter(Boolean).join(' ');
-};
+// Combines classNames into a single string
+export const cn = (...classNames: (string | undefined)[]): string =>
+  classNames.filter(Boolean).join(' ');
