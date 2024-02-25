@@ -1,13 +1,29 @@
-import { Link } from 'expo-router';
+import Link from '@/components/Link';
+import Screen from '@/components/Screen';
 
-import ListScreen from '@/components/Screen/List';
+const proposals = [
+  {
+    id: '1',
+    title: 'Proposal 1',
+  },
+  {
+    id: '2',
+    title: 'Proposal 2',
+  },
+  {
+    id: '3',
+    title: 'Proposal 3',
+  },
+];
 
 const ProposalsView = () => (
-  <ListScreen>
-    <Link href="/1">Proposal 1</Link>
-    <Link href="/2">Proposal 2</Link>
-    <Link href="/3">Proposal 3</Link>
-  </ListScreen>
+  <Screen className="items-center justify-center">
+    {proposals.map(({ id, title }) => (
+      <Link key={id} href={`/${id}`}>
+        {title}
+      </Link>
+    ))}
+  </Screen>
 );
 
 export default ProposalsView;
